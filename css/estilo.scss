@@ -4,61 +4,41 @@
 
 
 
-#indice {
-  
+#indice{
+    list-style: none;
+}
     
-  list-style: none;
-  
-    
-  
-  li {
-      display: block; // Asegurarse de que los elementos li se muestren en bloque
-      padding: 5px; // Espaciado interno para mejorar la apariencia del hover
-  
-      &
-  
-  :hover {
-        background-color: $color-secondary; // Cambia el color de fondo en hover
-        color: $color-primary; // Cambia el color del texto en hover
-        cursor: pointer; // Cambia el cursor al estilo de una mano
-      }
-    }
-  }
-  
-  
-      
-  .logotipo {
+.logotipo{
     display: flex;
     justify-content: center;
-    
-    
     align-items: center;
-    width: 100px;
-    height: auto;
-  }
-  
-  .indice {
+    
+        width: 100px;
+        height: auto;
+    
+}
+
+.indice{
     display: flex;
     background-color: $color-primary;
-    
-   
-  flex-direction: row;
+    flex-direction: row;
     margin-right: 100px;
+    list-style: none;
+}
     
-   
-  list-style: none;
-  }
-  
-  nav ul li a {
+    
+
+
+nav ul li a {
     display: inline;
     flex-direction: row;
-    margin-left: 20px;
-    text-decoration: none;
-    color: $color-secondary;
-    font-weight: bold;
-  }
+  margin-left: 20px;
+  text-decoration: none;
+  color: $color-secondary;
+  font-weight: bold;
 
-
+   
+}
 .educaciongeneral{
     display: flex;
     flex-wrap: nowrap; 
@@ -196,15 +176,3 @@ h2{
     width: 20%;
     
 }
-// Aplicar estilos específicos para pantallas móviles
-@media (max-width: 768px) {
-  
-    
-   
-  .logotipo {
-      width: 50px; 
-    }
-  
-    
-    }
-  

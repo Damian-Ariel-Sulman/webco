@@ -7,7 +7,7 @@
   <title>Sumate a ayudar</title>
   
   <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../scss/estilo.css">
 </head>
 
 <body>
@@ -48,6 +48,8 @@
 
 
     <section class="formularios border-top">
+      <div class="container">
+        <div class="row">
 
       <form action="404.html" method="post">
         <div>
@@ -59,17 +61,19 @@
           <label for="apellido"></label>
           <input type="text" placeholder="Apellido" id="apellido" name="apellido" required><br>
         </div>
+      </div>
 
-
+      <div class="row">
         <label for="email">Correo electrónico:</label>
         <input type="email" placeholder="email@gmail.com" id="email" name="email" required><br>
         <div>
           <label for="mensaje">comentanos tus inquietudes</label>
           <textarea name="mensaje" id="mensaje" cols="60" rows="10" placeholder="comentanos tus inquietudes"></textarea>
         </div>
+      </div>
 
 
-
+      <div class="row">
         <p>Selecciona las áreas en las que te gustaría colaborar:</p>
 
 
@@ -91,8 +95,10 @@
 
 
         <button type="submit">Enviar Inscripción</button>
+      </div>
 
     </section>
+  </div>
     </form>
   </main>
   <footer>
