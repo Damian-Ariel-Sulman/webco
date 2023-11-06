@@ -7,7 +7,7 @@
   <title>Sumate a ayudar</title>
   
   <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../scss/estilo.css">
 </head>
 
 <body>
@@ -48,8 +48,10 @@
 
 
     <section class="formularios border-top">
+      <div class="container">
+        <div class="row">
 
-      <form action="404.html" method="post">
+      <form action="../pages/error404.html" method="post">
         <div>
           <label for="nombre">Nombre y Apellido:</label><br>
           <input type="text" placeholder="Nombre" id="nombre" name="nombre" required>
@@ -59,17 +61,19 @@
           <label for="apellido"></label>
           <input type="text" placeholder="Apellido" id="apellido" name="apellido" required><br>
         </div>
+      </div>
 
-
+      <div class="row">
         <label for="email">Correo electrónico:</label>
         <input type="email" placeholder="email@gmail.com" id="email" name="email" required><br>
-        <div>
-          <label for="mensaje">comentanos tus inquietudes</label>
+        <div class="row">
+          <label for="mensaje"></label>
           <textarea name="mensaje" id="mensaje" cols="60" rows="10" placeholder="comentanos tus inquietudes"></textarea>
         </div>
+      </div>
 
 
-
+      <div class="row">
         <p>Selecciona las áreas en las que te gustaría colaborar:</p>
 
 
@@ -88,11 +92,16 @@
         <label for="centro_jubilados">Colaboración en centro de jubilados</label><br>
 
 
-
+        <div class="mapa border">
 
         <button type="submit">Enviar Inscripción</button>
+        <p>_____</p>
+        <button type="reset">Limpiar</button>
+       </div>
+      </div>
 
     </section>
+  </div>
     </form>
   </main>
   <footer>

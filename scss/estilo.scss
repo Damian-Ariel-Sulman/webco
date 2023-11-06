@@ -1,0 +1,210 @@
+@import "variables.scss";
+@import "reset.scss";
+@import "header";
+
+
+
+#indice {
+  
+    
+  list-style: none;
+  
+    
+  
+  li {
+      display: block; // Asegurarse de que los elementos li se muestren en bloque
+      padding: 5px; // Espaciado interno para mejorar la apariencia del hover
+  
+      &
+  
+  :hover {
+        background-color: $color-secondary; // Cambia el color de fondo en hover
+        color: $color-primary; // Cambia el color del texto en hover
+        cursor: pointer; // Cambia el cursor al estilo de una mano
+      }
+    }
+  }
+  
+  
+      
+  .logotipo {
+    display: flex;
+    justify-content: center;
+    
+    
+    align-items: center;
+    width: 100px;
+    height: auto;
+  }
+  
+  .indice {
+    display: flex;
+    background-color: $color-primary;
+    
+   
+  flex-direction: row;
+    margin-right: 100px;
+    
+   
+  list-style: none;
+  }
+  
+  nav ul li a {
+    display: inline;
+    flex-direction: row;
+    margin-left: 20px;
+    text-decoration: none;
+    color: $color-secondary;
+    font-weight: bold;
+  }
+
+
+.educaciongeneral{
+    display: flex;
+    flex-wrap: nowrap; 
+    .chicosestudiandosecundaria{
+        width: 35%;
+        height: 35%;
+        display: inline;
+        align-items: center;
+        
+    }  
+   }
+  
+   .nivelprimario, .nivelsecundario{
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       margin-top: 20px;
+       .apoyoescolar{
+        background-color: $color-secondary}
+        .fotosinicio{
+ 
+            align-items: center;
+          }
+        .jubiladosfotos{
+
+            display: inline;
+           margin-top: 50px;
+            height: 200px;
+            width: 200px;
+            .fotosjubilados{
+            
+          
+         
+                background-color: $color-primary;
+                width: 100%;
+                height: 100%;
+                
+            }
+            
+            
+        }
+        
+          
+    }  
+   
+  
+
+    
+
+
+h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+p{
+    display: flex;
+    text-align: center;
+    font-size: 1.5rem;
+    justify-content: center;
+    .centrarfooter{
+   
+        background-color: $color-primary;
+    }
+}
+.imgfooter{
+   display: block;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    font-weight: lighter;
+    font-size: 18px;
+    border-radius: 80%;
+  
+    
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.tabladehorarios{
+    display: flex;
+    justify-content: center;
+    .tablahorario{
+        display: grid;
+        grid-template-columns: 150px 150px ;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        border: 2px solid;
+    }
+}
+
+.tablahorario > div{
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    .textapoyoescolar{
+        
+        font-style: oblique;
+    }
+}
+.escuela{
+    border: 2px solid red;
+    background-color: rgb(233, 233, 48);
+    border-radius: 5%;
+  
+}
+
+.formularios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alto{
+    height: 40vh;
+}
+.pelota{
+    height: 100%;
+    width: 100%;
+}
+.colorfondo{
+    background-color: $color-primary;
+}
+.logo{
+    height: 20%;
+    width: 20%;
+    
+}
+// Aplicar estilos específicos para pantallas móviles
+@media (max-width: 768px) {
+  
+    
+   
+  .logotipo {
+      width: 50px; 
+    }
+  
+    
+    }
+  
